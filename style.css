@@ -1,41 +1,31 @@
-/* Body styles to center the container */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
-  margin: 0;
   background-color: #f4f4f4;
 }
 
-/* Container styles */
 .container {
-  width: 50%; /* Width of the grid container */
-  height: auto; /* Height of the grid container + buttons area */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fc0000;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-}
-
-/* Grid container with flex layout */
-#grid-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Align grid items in the center */
-  width: 100%;
-  flex-grow: 1; /* Allow the grid to take available space */
-  gap: 1px; /* Space between grid items */
+  width: 400px;
+  height: 400px;
+  color: red;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Individual grid items */
 .grid-item {
-  background-color: rgb(247, 158, 3);
+  background-color: #fff;
   border: 1px solid #000;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
@@ -49,7 +39,6 @@ body {
   margin-bottom: 40px;
 }
 
-/* Styling for the buttons */
 button {
   margin: 5px;
   padding: 10px 20px;
@@ -65,9 +54,8 @@ button:hover {
   background-color: #b6abab;
 }
 
-/* New grid button style */
 .new-grid-btn {
-  width: 200px; /* Make this button wider */
+  width: 200px;
 }
 
 button:active {
